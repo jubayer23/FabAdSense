@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
 import com.facebook.ads.AdListener;
+import com.facebook.ads.AdSettings;
 import com.facebook.ads.AdSize;
 import com.facebook.ads.AdView;
 
@@ -19,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        /*Run the below line to get your device id in the logcat*/
+        //AdSettings.addTestDevice("HASHED ID");
+
+
+        /*Use your own test device*/
+        AdSettings.addTestDevice("c3e9ee16b4d27186d94754f05444fac3");
 
 
         // Instantiate an AdView view
